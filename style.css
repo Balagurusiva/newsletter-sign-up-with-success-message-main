@@ -4,13 +4,19 @@ body{
     background-color:hsl(234, 29%, 20%);
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
     flex-direction: column;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 p{
     margin: 0px;
 }
-
+.mobile-img{
+    display: none;
+}
 .sign-up{
     display: flex;
     justify-content: center;  
@@ -24,10 +30,10 @@ p{
 
 .form{
     display: flex; 
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     width: 350px;
-    padding: 20px;
+    padding: 80px 20px;
 }
 
 .hero-text{
@@ -38,3 +44,107 @@ p{
 span{
     margin-right: 10px;
 }
+
+.list > p{
+    padding: 8px 0px;
+}
+
+input{
+    width:90%;
+    padding:15px 10px;
+    border:1px solid hsl(231, 7%, 60%);
+    border-radius: 8px;
+     
+}
+
+.input:hover{
+    border:1px solid hsl(235, 18%, 26%);
+    color:hsl(235, 18%, 26%)
+}
+
+
+.form-btn{
+    width:95%;
+    padding:20px 10px;
+    background-color:  hsl(234, 29%, 20%);
+    margin-top: 20px;
+    border:none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+}
+
+.success{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius:20px;
+}
+
+.success-img{
+    margin-bottom: 20px;
+}
+
+.tq{
+    font-size: 45px;
+    font-weight: 700;
+    color:hsl(234, 29%, 20%);
+    margin-bottom: 20px;
+}
+
+.content{
+    margin-bottom: 40px;
+}
+
+.success-btn{
+    width:95%;
+    padding:20px 10px;
+    background-color:  hsl(234, 29%, 20%);
+    margin-bottom: 20px;
+    border:none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:375px) {
+    
+    body{
+        height: inherit;
+        background-color: white;
+         
+    }
+
+    .mobile-img{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+   .sign-up{
+     display: flex;
+     flex-direction:column-reverse; 
+     padding: 0px;
+   }
+   .desktop-img{
+    display: none;
+
+   }
+   .form{
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+     
+    height: 450px;
+    padding:50px 20px
+}
+ 
+b{
+    margin-bottom: 10px;
+}
+
+  
+
+}
+

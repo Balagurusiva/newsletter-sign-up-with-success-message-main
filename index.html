@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Kablammo&family=Poppins:wght@300;500&family=Roboto+Condensed&family=Roboto:wght@400;700&family=Ubuntu:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -13,50 +15,59 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
-<body>
+<body >
 
   <!-- Sign-up form start -->
-  <div class="sign-up">
+  <div class="sign-up"  >
 
     <div class="form">
-      <p class="hero-text">Stay updated!</p>
+      <div> <p class="hero-text">Stay updated!</p></div>
+       
+      <div><p>Join 60,000+ product managers receiving monthly updates on:</p></div>
+       
+       <div class="list">
+        <p><span><img src="./assets/images/icon-list.svg" ></span>Product discovery and building what matters</p>
+        <p><span><img src="./assets/images/icon-list.svg" ></span>Measuring to ensure updates are a success</p>
+        <p><span><img src="./assets/images/icon-list.svg" ></span>And much more!</p>  
+       </div>
+ 
 
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-      <p><span><img src="./assets/images/icon-list.svg" ></span>Product discovery and building what matters</p>
-      <p><span><img src="./assets/images/icon-list.svg" ></span>Measuring to ensure updates are a success</p>
-      <p><span><img src="./assets/images/icon-list.svg" ></span>And much more!</p>
-    
-
-      <form action="">
-        <p>Email address</p> 
-        <input type="email" placeholder=" email@company.com"> <br>
-        <button> Subscribe to monthly newsletter</button>
+      <form action="" id="form">
+        <p style="display: flex; justify-content:space-between"> <b>Email address</b> <span class="errMsg" style="margin-right: 15px;color:hsl(4, 100%, 67%)"></span></p> 
+        <input type="text" placeholder=" email@company.com"> <br>
+        <button  onclick="validateInputs()" class="form-btn"> Subscribe to monthly newsletter</button>
+        
       </form>
     </div>
 
-    <div class="img"><img src="./assets/images/illustration-sign-up-desktop.svg" alt=""></div>
+    <div class="img">
+      <img class="desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      <img class="mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+    </div>
      
+    
   </div>
    
 
   <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+  <div class="success"  style="display: none;" >
+    <img src="./assets/images/icon-success.svg" class="success-img" alt="">
 
-  <!-- Thanks for subscribing!
+    <p class="tq">Thanks for subscribing!</p>
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+    <p class="content"> A confirmation email has been sent to <b>ash@loremcompany.com. </b> 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
 
-  Dismiss message -->
-
-  <!-- Success message end -->
-  
+    <button class="success-btn">Dismiss message</button>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Balaguru s</a>.
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
