@@ -5,16 +5,18 @@ html{
 
 body{
     width: 100%;
-    font-size: 16px;
     background-color:hsl(234, 29%, 20%);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: 11px;
     margin: 0;
     flex-direction: column;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+
 
 p{
     margin: 0px;
@@ -28,21 +30,26 @@ p{
     background-color:hsl(0, 0%, 100%);
     padding: 20px;
     margin: auto;
-    width:800px;
-    height: fit-content;
+    width:650px;
+    height: 450px;
     border-radius: 20px;
+}
+
+.desktop-img{
+    height: 450px;
 }
 
 .form{
     display: flex; 
     justify-content: space-between;
     flex-direction: column;
-    width: 350px;
-    padding: 80px 20px;
+    width: 300px;
+    height: 350px;
+    padding: 40px 50px;
 }
 
 .hero-text{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -51,12 +58,12 @@ span{
 }
 
 .list > p{
-    padding: 8px 0px;
+    padding: 5px 0px;
 }
 
 input{
     width:90%;
-    padding:15px 10px;
+    padding:10px 10px;
     border:1px solid hsl(231, 7%, 60%);
     border-radius: 8px;
      
@@ -69,8 +76,8 @@ input{
 
 
 .form-btn{
-    width:95%;
-    padding:20px 10px;
+    width:100%;
+    padding:10px 10px;
     background-color:  hsl(234, 29%, 20%);
     margin-top: 20px;
     border:none;
@@ -122,7 +129,7 @@ input{
     }
     
     body{
-        height: inherit;
+        height: 100vh;
         background-color: white;
         width: 360px;
     }
