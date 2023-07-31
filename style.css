@@ -1,5 +1,10 @@
+html{
+   
+    box-sizing: border-box;
+}
+
 body{
-    width: 1440px;
+    width: 100%;
     font-size: 16px;
     background-color:hsl(234, 29%, 20%);
     display: flex;
@@ -109,16 +114,21 @@ input{
 }
 
 
-@media screen and (max-width:375px) {
+@media (max-width:375px) {
+
+    html{
+        margin: 0px;
+        padding: 0px;
+    }
     
     body{
         height: inherit;
         background-color: white;
-         
+        width: 360px;
     }
 
     .mobile-img{
-        display: block;
+        display:block;
         padding: 0;
         margin: 0;
     }
@@ -126,6 +136,7 @@ input{
      display: flex;
      flex-direction:column-reverse; 
      padding: 0px;
+     width: 350px;
    }
    .desktop-img{
     display: none;
@@ -137,11 +148,15 @@ input{
     flex-direction: column;
      
     height: 450px;
-    padding:50px 20px
+    padding:50px 12px
 }
  
 b{
     margin-bottom: 10px;
+}
+
+.attribution{
+    width: 374px;
 }
 
   
